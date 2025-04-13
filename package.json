@@ -1,0 +1,39 @@
+{
+  "name": "@bytesberry/uploader",
+  "description": "A simple and customizable React uploader component that provides an easy way to images.",
+  "version": "1.0.5",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "uploader",
+    "image uploader",
+    "uploader package",
+    "base64 image uploader"
+  ],
+  "repository": "",
+  "author": "sailendrachettri <sailendra9083@gmail.com>",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "postcss": "^8.4.49",
+    "prop-types": "^15.8.1",
+    "rollup": "^4.29.1",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}

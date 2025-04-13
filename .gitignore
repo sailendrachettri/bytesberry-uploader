@@ -1,0 +1,11 @@
+test
+node_modules
+demo
+vite-project
+dist
+.storybook
+test.js
+test.txt
+demo.txt
+
+*storybook.log
