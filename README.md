@@ -17,8 +17,7 @@ npm install @bytesberry/uploader
 ```
 
 ## Snapshots
-<!-- ![Preview](https://drive.google.com/uc?export=view&id=1Gmg74awtq9N3vn5Wz5x0u-vG_4ZV4vSa) -->
-(To be added soon)
+![Preview](https://drive.google.com/uc?export=view&id=1PJl9OtseonS5K1-VVwx9cuSyJMItoPqJ)
 
 ## Usage
 
@@ -50,5 +49,5 @@ setFile = {}
 - Lightweight and easy to use
 - Just install and use right away
 
-## Cooming soon updates
+## Coming soon updates
 - base64 image file
