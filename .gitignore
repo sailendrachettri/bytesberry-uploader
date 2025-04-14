@@ -2,7 +2,7 @@ test
 node_modules
 demo
 vite-project
-dist
+# dist // comment this while publishing to npm and uncomment when pushing to github
 .storybook
 test.js
 test.txt

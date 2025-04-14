@@ -24,6 +24,8 @@ npm install @bytesberry/uploader
 You can easily integrate the `uploader` component into your React application:
 
 ```javascript
+import { Uploader } '@bytesberry/uploader';
+
 function App() {
   const [selectedFile, setSelectedFile] = useState(null);
 

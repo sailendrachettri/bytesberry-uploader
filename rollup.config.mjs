@@ -16,6 +16,7 @@ export default {
             format: 'esm',
         },
     ],
+    external: ['react', 'react-dom'], // <-- IMPORTANT
     plugins: [
         babel({
             presets: ['@babel/preset-env', '@babel/preset-react'],
