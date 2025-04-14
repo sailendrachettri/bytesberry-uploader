@@ -1,7 +1,7 @@
 {
   "name": "@bytesberry/uploader",
-  "description": "A simple and customizable React uploader component that provides an easy way to images.",
-  "version": "1.0.5",
+  "description": "A simple and customizable React Image uploader component that provides an easy way to upload images.",
+  "version": "1.0.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -16,7 +16,7 @@
     "uploader package",
     "base64 image uploader"
   ],
-  "repository": "",
+  "repository": "https://github.com/sailendrachettri/bytesberry-uploader.git",
   "author": "sailendrachettri <sailendra9083@gmail.com>",
   "license": "ISC",
   "private": false,
