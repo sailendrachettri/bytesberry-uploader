@@ -1,8 +1,8 @@
 #file-container{
     border: 1px dashed gray;
     border-radius: 5px;
-    height: 10rem;
-    width: 20rem;
+    height: 6rem;
+    width: 14rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,5 +35,12 @@ display: none;
 
 .delete-icon:hover{
     scale: 1.4;
+}
+
+@media screen and (min-width: 500px ) {
+    #file-container{
+        height: 10rem;
+        width: 20rem;
+    }
 }
 

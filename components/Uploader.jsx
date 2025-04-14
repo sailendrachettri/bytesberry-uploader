@@ -1,19 +1,22 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import './Uploader.css'
 
-const Uploader = () => {
+const Uploader = ({file, setFile}) => {
   const refContainer = useRef(null);
   const refInput = useRef(null);
-  const [file, setFile] = useState(null);
 
 const handleFileInputClick = ()=>{
-  const file = refInput.current.click();
-  console.log(file);
+  refInput.current.click();
 }
 
 const handleFileChange = (e) =>{
-  const file = e.target.files[0];
-  setFile(file);
+  const fileData = e.target.files[0];
+  // if(file)
+    setFile(fileData);
+  // else
+  //   setFile(null);
+
+  console.log("file in the component ", fileData);
 
 }
 
@@ -21,8 +24,6 @@ const styleWhenFileisSelected ={
    backgroundColor: 'rgb(239 239 239)',
    border: '1px dashed rgb(167 162 162)'
 }
-
-console.log("file ", file);
 
   return (
    <div>
