@@ -16,7 +16,7 @@ Install the package using NPM:
 npm install @bytesberry/uploader
 ```
 
-## Snapshots
+## Preview
 ![Preview](https://drive.google.com/uc?export=view&id=1PJl9OtseonS5K1-VVwx9cuSyJMItoPqJ)
 
 ## Usage
