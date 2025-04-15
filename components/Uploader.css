@@ -1,46 +1,45 @@
-#file-container{
-    border: 1px dashed gray;
-    border-radius: 5px;
-    height: 6rem;
-    width: 14rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    color: rgb(71, 66, 66);
-    cursor: pointer;
-    position: relative;
-    z-index: 5;
+#file-container {
+  border: 1px dashed gray;
+  border-radius: 5px;
+  height: 6rem;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(71, 66, 66);
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
-#file-container:hover{
-    border: 1px dashed green;
+#file-container:hover {
+  border: 1px dashed var(--hover-border-color);
 }
-.file-input{
-display: none;
-}
-
-.delete-button{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 10;
-}
-.delete-icon{
-    height: 1rem;
-    width: 1rem;
-    color: red;
-    display: none;
-    transition: all 0.4s ease-in-out;
+.file-input {
+  display: none;
 }
 
-.delete-icon:hover{
-    scale: 1.4;
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+}
+.delete-icon {
+  height: 1rem;
+  width: 1rem;
+  color: red;
+  display: none;
+  transition: all 0.4s ease-in-out;
 }
 
-@media screen and (min-width: 500px ) {
-    #file-container{
-        height: 10rem;
-        width: 20rem;
-    }
+.delete-icon:hover {
+  scale: 1.4;
 }
 
+@media screen and (min-width: 500px) {
+  #file-container {
+    height: 10rem;
+    width: 20rem;
+  }
+}
