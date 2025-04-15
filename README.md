@@ -84,3 +84,6 @@ Customize the border color of the uploader area. Accepts any valid CSS color str
 
 ## Coming soon updates
 - Drag and drop file to upload
+- Selected file image preview
+- Custom height and width
+- To set a custom file size limit

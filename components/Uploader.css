@@ -1,9 +1,10 @@
 #file-container {
-  border: 1px dashed gray;
+  border: 2px dashed gray;
   border-radius: 5px;
-  height: 6rem;
-  width: 14rem;
+  height: 10rem;
+  width: 18rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 15px;
@@ -13,10 +14,33 @@
   z-index: 5;
 }
 #file-container:hover {
-  border: 1px dashed var(--hover-border-color);
+  border: 2px dashed var(--hover-border-color);
 }
+
+.file-icon{
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(128, 128, 128, 0.081);
+  border-radius: 100%;
+  padding: 10px;
+}
+
 .file-input {
   display: none;
+}
+
+.file-description{
+  color: rgb(45, 42, 42);
+  font-size: 0.6rem;
+  font-family: 'Lucida Sans', sans-serif;
+  padding-top: 15px;
+}
+
+.file-formats-details{
+  color: rgb(164, 159, 159);
+  font-family: 'Lucida Sans', sans-serif;
+  padding-top: 4px;
+  font-size: 0.5rem;
 }
 
 .delete-button {
@@ -37,9 +61,23 @@
   scale: 1.4;
 }
 
+.selected-image-preview{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 500px) {
   #file-container {
-    height: 10rem;
-    width: 20rem;
+    height:11rem;
+    width: 25rem;
+  }
+  .file-description{
+    font-size: 1rem;
+  }
+  
+  .file-formats-details{
+    font-size: 0.9rem;
   }
 }
