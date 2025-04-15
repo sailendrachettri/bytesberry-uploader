@@ -57,14 +57,14 @@ const Uploader = ({
 
   const styleWhenFileIsSelected = {
     backgroundColor: 'rgb(239 239 239)',
-    border: '2px dashed rgb(167 162 162)',
+    border: '2px dashed transparent',
   };
 
   return (
     <div>
       <div
         id='file-container'
-        style={file ? styleWhenFileIsSelected : { '--hover-border-color': borderColor || 'grey' }}
+        style={file ? styleWhenFileIsSelected : { '--hover-border-color': borderColor || 'gray' }}
         ref={refContainer}
         onClick={handleFileInputClick}
       >
