@@ -76,14 +76,21 @@ A setter function that updates the `fileBase64` value when a new image is upload
 **Description:**  
 Customize the border color of the uploader area. Accepts any valid CSS color string (e.g., `"#000"`, `"red"`, `"rgb(255, 0, 0)"`). It helps match the uploader’s design with your app’s theme.
 
+
+### `maxFileSizeAllowedInMB`  
+**Type:** `number`  
+**Optional**  
+**Default:** `5`  
+**Description:**  
+Specifies the maximum file size (in megabytes) allowed for uploads. If the selected image exceeds this limit, the upload will be blocked. By default, files larger than **5 MB** are not allowed. Use this prop to control image size and prevent large file uploads.
+
 ## Features
 
 - Lightweight and easy to use
-- Just install and use right away
-- Get base64 image data
+- Clean and modern UI
+- Get base64 image data too
+- Control the maximum file size uploads limits
 
 ## Coming soon updates
 - Drag and drop file to upload
-- Selected file image preview
 - Custom height and width
-- To set a custom file size limit

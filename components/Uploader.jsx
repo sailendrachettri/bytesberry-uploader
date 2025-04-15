@@ -9,7 +9,7 @@ const Uploader = ({
   fileBase64,
   setFileBase64,
   borderColor,
-  maxFileSizeAllowed
+  maxFileSizeAllowedInMB
 }) => {
   const refContainer = useRef(null);
   const refInput = useRef(null);
@@ -37,7 +37,7 @@ const Uploader = ({
 
   const handleFileChange = (e) => {
     const fileData = e.target.files[0];
-    const maxAllowed = maxFileSizeAllowed ? maxFileSizeAllowed * 1024 * 1024 : 5 * 1024 * 1024; // default 5MB
+    const maxAllowed = maxFileSizeAllowedInMB ? maxFileSizeAllowedInMB * 1024 * 1024 : 5 * 1024 * 1024; // default 5MB
 
     if (fileData) {
       const fileSizeInBytes = fileData.size;
@@ -106,7 +106,7 @@ const Uploader = ({
           <>
             <span className='file-description'>Drag & Drop or Choose file to upload</span>
             <span className='file-formats-details'>
-              jpg, png & pdf formats, up to {maxFileSizeAllowed || 5} MB
+              jpg, png & pdf formats, up to {maxFileSizeAllowedInMB || 5} MB
             </span>
           </>
         )}
