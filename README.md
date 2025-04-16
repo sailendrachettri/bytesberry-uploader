@@ -39,6 +39,7 @@ function App() {
         fileBase64={selectedFileBase64}
         setFileBase64={setSelectedFileBase64} 
         borderColor="#000"
+        borderColorOnHover="orange"
         maxFileSizeAllowedInMB={2} // default limit is 5mb
         height="15rem" // 11rem is default height
         width="30rem" // 25rem is default width
@@ -86,6 +87,25 @@ Customize the border color of the uploader area. Accepts any valid CSS color str
 **Default:** `5`  
 **Description:**  
 Specifies the maximum file size (in megabytes) allowed for uploads. If the selected image exceeds this limit, the upload will be blocked. By default, files larger than **5 MB** are not allowed. Use this prop to control image size and prevent large file uploads.
+
+### `borderColorOnHover`  
+**Type:** `string`  
+**Optional**  
+**Description:**  
+Defines the border color of the uploader component when the user hovers over it. Accepts any valid CSS color string (`"orange"`, `"#f90"`, `"rgba(255,165,0,0.5)"`, etc.), allowing visual feedback on hover to match your design theme.
+
+
+### `height`  
+**Type:** `string`  
+**Optional**  
+**Description:**  
+Sets the height of the uploader container. Accepts any valid CSS height value (`"16rem"`, `"200px"`, `"100%"`, etc.), allowing you to control the vertical size of the component.
+
+### `width`  
+**Type:** `string`  
+**Optional**  
+**Description:**  
+Sets the width of the uploader container. Accepts any valid CSS width value (`"30rem"`, `"100%"`, `"500px"`, etc.), making it easy to customize the component's horizontal size to fit your layout.
 
 ## Features
 
