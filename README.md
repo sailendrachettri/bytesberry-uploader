@@ -39,6 +39,7 @@ function App() {
         fileBase64={selectedFileBase64}
         setFileBase64={setSelectedFileBase64} 
         borderColor="#000"
+        maxFileSizeAllowedInMB={2} // default limit is 5mb
       />
 
     </>
