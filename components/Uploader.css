@@ -1,5 +1,5 @@
-#file-container {
-  border: 2px dashed gray;
+.file-container {
+  border: 2px dashed var(--border-color, gray);
   border-radius: 5px;
   height: 10rem;
   width: 18rem;
@@ -13,7 +13,7 @@
   position: relative;
   z-index: 5;
 }
-#file-container:hover {
+.file-container:hover {
   border: 2px dashed var(--hover-border-color);
 }
 
@@ -69,9 +69,9 @@
 }
 
 @media screen and (min-width: 500px) {
-  #file-container {
-    height:11rem;
-    width: 25rem;
+  .file-container {
+    height: var(--container-height);
+    width: var(--container-width);
   }
   .file-description{
     font-size: 1rem;

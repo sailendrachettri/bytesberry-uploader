@@ -40,6 +40,8 @@ function App() {
         setFileBase64={setSelectedFileBase64} 
         borderColor="#000"
         maxFileSizeAllowedInMB={2} // default limit is 5mb
+        height="15rem" // 11rem is default height
+        width="30rem" // 25rem is default width
       />
 
     </>
@@ -94,4 +96,3 @@ Specifies the maximum file size (in megabytes) allowed for uploads. If the selec
 
 ## Coming soon updates
 - Drag and drop file to upload
-- Custom height and width

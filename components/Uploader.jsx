@@ -10,6 +10,9 @@ const Uploader = ({
   fileBase64,
   setFileBase64,
   borderColor,
+  borderColorOnHover,
+  height,
+  width,
   maxFileSizeAllowedInMB
 }) => {
   const refContainer = useRef(null);
@@ -64,8 +67,13 @@ const Uploader = ({
   return (
     <div>
       <div
-        id='file-container'
-        style={file ? styleWhenFileIsSelected : { '--hover-border-color': borderColor || 'gray' }}
+        className='file-container'
+        style={file ? styleWhenFileIsSelected : { 
+          '--hover-border-color': borderColorOnHover || 'gray',
+          '--container-height': height || '11rem',
+          '--container-width': width || '25rem',
+          '--border-color' : borderColor
+           }}
         ref={refContainer}
         onClick={handleFileInputClick}
       >
