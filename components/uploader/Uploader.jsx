@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Uploader.css';
-import { getBase64 } from '../utilities/getBase64';
+import { getBase64 } from '../../utilities/getBase64';
 import iconImg from '../assets/file_icon_compressed.png';
 
 
