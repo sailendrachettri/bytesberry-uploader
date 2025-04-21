@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './AvatarUploaderStyles.css';
 import { getBase64 } from '../../utilities/getBase64';
-import iconImg from '../../assets/file_icon_compressed.png';
 
 
 const AvatarUploader = ({
@@ -70,8 +69,8 @@ const AvatarUploader = ({
         className='file-container'
         style={file ? styleWhenFileIsSelected : { 
           '--hover-border-color': borderColorOnHover || 'gray',
-          '--container-height': height || '11rem',
-          '--container-width': width || '25rem',
+          '--container-height': height || '14rem',
+          '--container-width': width || '16rem',
           '--border-color' : borderColor
            }}
         ref={refContainer}
@@ -79,7 +78,10 @@ const AvatarUploader = ({
       >
         {!file && (
           <div>
-            <img src={iconImg} alt="File Icon" className='file-icon' />
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" className="avatar">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+</svg>
+
           </div>
         )}
 
@@ -113,7 +115,7 @@ const AvatarUploader = ({
           <img src={localBase64} alt="Selected File" className='selected-image-preview' />
         ) : (
           <>
-            <span className='file-description'>Drag & Drop or Choose file to upload</span>
+            <span className='file-description'>Drag & Drop or Upload</span>
             <span className='file-formats-details'>
               jpg, png & pdf formats, up to {maxFileSizeAllowedInMB || 5} MB
             </span>
