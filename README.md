@@ -43,6 +43,7 @@ function App() {
         maxFileSizeAllowedInMB={2} // default limit is 5mb
         height="15rem" // 11rem is default height
         width="30rem" // 25rem is default width
+        showAvatar={true} // false by default
       />
 
     </>
@@ -116,3 +117,4 @@ Sets the width of the uploader container. Accepts any valid CSS width value (`"3
 
 ## Coming soon updates
 - Drag and drop file to upload
+- Multi file uploader
