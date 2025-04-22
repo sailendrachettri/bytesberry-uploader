@@ -25,6 +25,12 @@
   padding: 10px;
 }
 
+.avatar{
+  height: 5rem;
+  width: 5rem;
+  color: gray;
+}
+
 .file-input {
   display: none;
 }
@@ -70,8 +76,8 @@
 
 @media screen and (min-width: 500px) {
   .file-container {
-    height: var(--container-height);
-    width: var(--container-width);
+    height: var(--container-height, 11rem);
+    width: var(--container-width, 25rem);
   }
   .file-description{
     font-size: 1rem;
