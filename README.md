@@ -108,6 +108,12 @@ Sets the height of the uploader container. Accepts any valid CSS height value (`
 **Description:**  
 Sets the width of the uploader container. Accepts any valid CSS width value (`"30rem"`, `"100%"`, `"500px"`, etc.), making it easy to customize the component's horizontal size to fit your layout.
 
+### `showAvatar`  
+**Type:** `boolean`  
+**Optional**  
+**Default:** `false`  
+**Description:** Displays the svg avatar if set to `true`.
+
 ## Features
 
 - Lightweight and easy to use
