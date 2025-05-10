@@ -40,6 +40,18 @@ const Uploader = ({
     }
   }, [file]);
 
+  useEffect(()=>{
+    const container = document.querySelector('.file-container');
+
+    container.addEventListener('drop', (e)=>{
+      // alert("hello")
+      e.preventDefault();
+    });
+
+    // container.addEventListener(' ')
+
+  },[]);
+
   const handleFileChange = (e) => {
     const fileData = e.target.files[0];
     const maxAllowed = maxFileSizeAllowedInMB ? maxFileSizeAllowedInMB * 1024 * 1024 : 5 * 1024 * 1024; // default 5MB
